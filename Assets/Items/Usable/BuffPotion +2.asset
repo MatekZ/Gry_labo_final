@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242e86f6e45bf164db9aa7a9fdc0dae8, type: 3}
+  m_Name: BuffPotion +2
+  m_EditorClassIdentifier: 
+  id: aa838a2aae4f45a47bea6be60a8349be
+  ItemName: BuffPotion +2
+  Icon: {fileID: -1127824662, guid: d28619254d7ecf042975e3ae930d4de9, type: 3}
+  MaximumStacks: 20
+  IsConsumable: 1
+  Effects:
+  - {fileID: 11400000, guid: f1c6e2edf44d30e46bb067ff36cbe9f8, type: 2}
