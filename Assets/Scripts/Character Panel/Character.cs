@@ -4,7 +4,7 @@ using Kryz.CharacterStats;
 
 public class Character : MonoBehaviour
 {
-	public int Health = 50;
+	public int Health = 100;
 
 	[Header("Stats")]
 	public CharacterStat Strength;
@@ -24,6 +24,8 @@ public class Character : MonoBehaviour
 	[SerializeField] DropItemArea dropItemArea;
 	[SerializeField] QuestionDialog reallyDropItemDialog;
 	[SerializeField] ItemSaveManager itemSaveManager;
+
+	
 
 	private BaseItemSlot dragItemSlot;
 
@@ -312,5 +314,11 @@ public class Character : MonoBehaviour
 	public void UpdateStatValues()
 	{
 		statPanel.UpdateStatValues();
+       
+	}
+
+	public int GetHealth()
+	{
+		return Health;
 	}
 }
