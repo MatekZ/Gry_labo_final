@@ -582,8 +582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1470580346}
   dialogSentences:
-  - Yes I am ready for my next adventure. I will gladly help Eldor get its freedom
-    and peace back.
+  - "Tak, jestem gotowy na moj\u0105 kolejn\u0105 przygod\u0119. Z ch\u0119ci\u0105
+    pomog\u0119 odzyska\u0107 spok\xF3j w Eldorze."
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 1470580346}
@@ -744,7 +744,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1934671648}
   dialogSentences:
-  - They got control of the kingdom and kidnaped our queen Luna.
+  - "Przej\u0119\u0142y one kontrol\u0119 nad kr\xF3lestwem oraz porwa\u0142y Ksi\u0119\u017Cniczk\u0119
+    Lun\u0119."
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 1934671648}
@@ -779,8 +780,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1887594573}
   dialogSentences:
-  - Hello adventurer, my name is Rocco, and I come from Eldor to deliver a message
-    from our king. Eldor has been attacked by dark forces from the undead realm.
+  - "Witaj poszukiwaczy przyg\xF3d, nazywam si\u0119 Rocco i przybywam z kr\xF3lestwa
+    Eldor.  Nasze kr\xF3lestwo zosta\u0142o zaatakowane przez mroczne si\u0142y ze
+    \u015Bwiata umar\u0142ych."
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 1887594573}
@@ -15002,7 +15004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 114723500}
   dialogSentences:
-  - I am very glad to hear that. No time to waste then. LETS GO!
+  - "Bardzo dobrze to s\u0142ysze\u0107. Nie marnujmy wi\u0119c czasu. W DROG\u0118!"
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 114723500}
@@ -18524,16 +18526,12 @@ PlayableDirector:
     value: {fileID: 2117379299}
   - key: {fileID: -7552067022558145263, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 989529341}
-  - key: {fileID: -7454372544403840858, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
-    value: {fileID: 317355817}
   - key: {fileID: -10592926747547193, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 430704031}
   - key: {fileID: -8041637016546261560, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 444914169}
   - key: {fileID: 1145479937941781090, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 1887594575}
-  - key: {fileID: -4357891749716070327, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
-    value: {fileID: 604772865}
   - key: {fileID: -2662683834025209855, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 370391470}
   - key: {fileID: 1072383038742314687, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
@@ -18556,22 +18554,26 @@ PlayableDirector:
     value: {fileID: 1955674917}
   - key: {fileID: -2538911713075451449, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 810994182}
-  - key: {fileID: -8635230085209634289, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: 8807002972455053862, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 513055612}
-  - key: {fileID: -1990155688449108528, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: 404706303705812990, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 1934671647}
-  - key: {fileID: 981362426126620317, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: -8046531995938898870, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 1768271051}
-  - key: {fileID: 3758324957800645416, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: 1758818895589753052, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 1260174852}
-  - key: {fileID: 8018125849371965165, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: 2179994415611190510, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 77455144}
-  - key: {fileID: 2887166246424913942, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: -7078463168531812516, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 1470580345}
-  - key: {fileID: -6525158838778638966, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: -4309699138389174743, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 1378705672}
-  - key: {fileID: 3284056902688757622, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+  - key: {fileID: 6376549876462430387, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
     value: {fileID: 114723499}
+  - key: {fileID: -8723637426233129136, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+    value: {fileID: 604772865}
+  - key: {fileID: 2414731857636789363, guid: 88a3f04dd1f501b44b45bafc0cb5c079, type: 2}
+    value: {fileID: 317355817}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &996363207
@@ -20644,8 +20646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 38783742}
   dialogSentences:
-  - Eldorian's sorcerer supreme Zephyr found out from ancient books that the castle
-    used to be a Dark Castle, the Kingdom of the Undead.
+  - "Zephry, czarnoksi\u0119\u017Cnik z Eldoru dowiedzia\u0142 si\u0119 z starodawnych
+    ksi\u0105g, \u017Ce nasz zamek to dawny Mroczny Zamek, Kr\xF3lestwo Umar\u0142ych."
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 38783742}
@@ -20962,8 +20964,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 318843941}
   dialogSentences:
-  - A mysterious portal opened in our castle, and evil forces started to come out
-    of it. Eldorians tried to fight against them and succeeded for a while.....
+  - "Tajemniczy portal otworzy\u0142 si\u0119 w naszym zamku i z\u0142e, mroczne
+    si\u0142y zacz\u0119\u0142y si\u0119 z niego wydostawa\u0107. Mieszka\u0144cy
+    Eldoru pr\xF3bowali z nimi walczy\u0107 i przez chwil\u0119 si\u0119 to udawa\u0142o......"
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 318843941}
@@ -21461,8 +21464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1043998061}
   dialogSentences:
-  - But the evil grew stronger and stronger, and eventually our forces were defeated,
-    and the kingdom has been taken over.
+  - "Ale z\u0142o ros\u0142o w si\u0142\u0119 i w ko\u0144cu nasi rycerze zostali
+    pokonani, a w\u0142adz\u0119 w kr\xF3lestwi przejeli wrogowie."
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 1043998061}
@@ -21497,7 +21500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1457645792}
   dialogSentences:
-  - What happened in Eldor?
+  - "Co si\u0119 sta\u0142o w Eldorze?"
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 1457645792}
@@ -21760,8 +21763,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 810994183}
   dialogSentences:
-  - Our ancestors deafeted them and banished them to the undead realm, but now they
-    came back for revenge!
+  - "Nasi przodkowie pokonali mroczne si\u0142y i wygnali je do \u015Awiata Umar\u0142ych,
+    lecz teraz powr\xF3ci\u0142y one po zemst\u0119!"
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 810994183}
@@ -21811,7 +21814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1260174853}
   dialogSentences:
-  - Are you willing to help us adventurer?
+  - "Czy jeste\u015B do\u015B\u0107 dzielny, \u017Ceby nam pom\xF3\u0107? "
   i: 0
   dialogueSpeed: 0.05
   dialogueTextBox: {fileID: 1260174853}
@@ -23277,9 +23280,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: On what seemed to be a peaceful day, Luigi and his kingdom were visited
-    by an unexpected messenger from the neighboring kingdom of Eldor with some horrifying
-    news
+  m_text: "W ten jak mog\u0142o si\u0119 wydawa\u0107 spokojny dzie\u0144 Luigi i
+    jego kr\xF3lestwo zostali odwiedzeni przez niespodziewanego go\u015Bcia, pos\u0142a\u0144ca
+    Ricco z kr\xF3lestwa Eldor, nios\u0105cego straszne wie\u015Bci. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
   m_sharedMaterial: {fileID: 6109421848474696833, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}

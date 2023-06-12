@@ -15,6 +15,8 @@ public class NPC : MonoBehaviour
     private int i;
     public float dialogueSpeed;
     public bool playerClose;
+    public int countToPanel;
+    public GameObject nicoCraftPanel;
 
 
     private void Update()
@@ -36,12 +38,21 @@ public class NPC : MonoBehaviour
         {
             //NPCCanvas.SetActive(true);
             skipText.SetActive(true);
+            
+
             if (Input.GetKeyDown(KeyCode.G) && playerClose)
             {
 
                 NextSentence();
+                if (countToPanel == 0)
+                {
+                    Debug.Log("ostatnie zdanie");
+                    nicoCraftPanel.SetActive(true);
+                }
             }
         }
+        //Debug.Log("count = "+ countToPanel);
+
     }
 
     public void TextReset()
@@ -55,6 +66,7 @@ public class NPC : MonoBehaviour
 
     public void NextSentence()
     {
+        countToPanel--;
         skipText.SetActive(false);
         if (i < dialogueSentences.Length - 1)
         {
