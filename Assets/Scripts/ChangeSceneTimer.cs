@@ -11,6 +11,12 @@ public class ChangeSceneTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            changeTimer = 1;
+            SceneManager.LoadScene(sceneName);
+        }
+
         changeTimer -= Time.deltaTime;
         if (changeTimer < 0)
         {
