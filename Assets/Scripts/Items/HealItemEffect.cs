@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 
+
 [CreateAssetMenu(menuName = "Item Effects/Heal")]
 public class HealItemEffect : UsableItemEffect
 {
     public int HealAmount;
+   
 
 	public override void ExecuteEffect(UsableItem usableItem, Character character)
 	{
@@ -15,8 +17,10 @@ public class HealItemEffect : UsableItemEffect
             bool wasHealed = damageable.Heal((damageable.MaxHealth - damageable.Health));
 
         }*/
-        character.Health += HealAmount;
-	}
+        character.Health = HealAmount;
+       
+
+    }
 
 	public override string GetDescription()
 	{
