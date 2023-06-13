@@ -14,8 +14,6 @@ public class Damageable : MonoBehaviour
     public UnityEvent<int, int> healthChanged;
     Animator animator;
     public StatPanel statPanel;
-    public Character character;
-    private int hh = 0;
     [SerializeField]
     private int _maxHealth = 100;
     public int MaxHealth
@@ -98,11 +96,7 @@ public class Damageable : MonoBehaviour
     public void Update()
     {
         
-        if (character.GetHealth() != 0)
-        {
-            Heal(character.GetHealth());
-            character.Health = 0;
-        }
+   
         if (isInvincible)
         {
             if (timeSinceHit > invincibilityTime)

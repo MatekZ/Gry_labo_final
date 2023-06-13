@@ -17,15 +17,17 @@ public class Character : MonoBehaviour
 	public EquipmentPanel EquipmentPanel;
 
 	[Header("Serialize Field")]
-	[SerializeField] CraftingWindow craftingWindow;
-	[SerializeField] StatPanel statPanel;
+	[SerializeField] CraftingWindow NovaCraftingWindow;
+    [SerializeField] CraftingWindow NicoCraftingWindow;
+    [SerializeField] CraftingWindow BlakeCraftingWindow;
+    [SerializeField] StatPanel statPanel;
 	[SerializeField] ItemTooltip itemTooltip;
 	[SerializeField] Image draggableItem;
 	[SerializeField] DropItemArea dropItemArea;
 	[SerializeField] QuestionDialog reallyDropItemDialog;
 	[SerializeField] ItemSaveManager itemSaveManager;
 
-	
+	public Damageable damageable;
 
 	private BaseItemSlot dragItemSlot;
 
@@ -47,13 +49,17 @@ public class Character : MonoBehaviour
 		// Pointer Enter
 		Inventory.OnPointerEnterEvent += ShowTooltip;
 		EquipmentPanel.OnPointerEnterEvent += ShowTooltip;
-		craftingWindow.OnPointerEnterEvent += ShowTooltip;
-		// Pointer Exit
-		Inventory.OnPointerExitEvent += HideTooltip;
+        NovaCraftingWindow.OnPointerEnterEvent += ShowTooltip;
+        NicoCraftingWindow.OnPointerEnterEvent += ShowTooltip;
+        BlakeCraftingWindow.OnPointerEnterEvent += ShowTooltip;
+        // Pointer Exit
+        Inventory.OnPointerExitEvent += HideTooltip;
 		EquipmentPanel.OnPointerExitEvent += HideTooltip;
-		craftingWindow.OnPointerExitEvent += HideTooltip;
-		// Begin Drag
-		Inventory.OnBeginDragEvent += BeginDrag;
+        NovaCraftingWindow.OnPointerExitEvent += HideTooltip;
+        NicoCraftingWindow.OnPointerExitEvent += HideTooltip;
+        BlakeCraftingWindow.OnPointerExitEvent += HideTooltip;
+        // Begin Drag
+        Inventory.OnBeginDragEvent += BeginDrag;
 		EquipmentPanel.OnBeginDragEvent += BeginDrag;
 		// End Drag
 		Inventory.OnEndDragEvent += EndDrag;
@@ -317,8 +323,8 @@ public class Character : MonoBehaviour
        
 	}
 
-	public int GetHealth()
+	public void UpdateHealth(int health1)
 	{
-		return Health;
+		damageable.Heal(health1);
 	}
 }

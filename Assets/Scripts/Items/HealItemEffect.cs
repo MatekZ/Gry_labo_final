@@ -18,6 +18,7 @@ public class HealItemEffect : UsableItemEffect
 
         }*/
         character.Health = HealAmount;
+        character.UpdateHealth(HealAmount);
        
 
     }
