@@ -1545,7 +1545,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 24e38648973d2ff40ba6d0f2f885568a, type: 2}
     - target: {fileID: 6718153867279031602, guid: 97fc5c64543906e4184be5dc0264b0bf, type: 3}
       propertyPath: useEncryption
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6718153867279031603, guid: 97fc5c64543906e4184be5dc0264b0bf, type: 3}
       propertyPath: m_Name
