@@ -44,10 +44,10 @@ public class CoinsCollectedText : MonoBehaviour, IDataPresistance
 
         Scene scene = SceneManager.GetActiveScene();
         data.LvlName = scene.name;
-        Debug.Log("" + scene.name);
+     
         if (scene.name == "Poziom_0")
         {
-            coinsCollected = data.coins_lvl0;
+           coinsCollected = data.coins_lvl0;
         }
         if (scene.name == "Poziom_1")
         {
@@ -64,7 +64,7 @@ public class CoinsCollectedText : MonoBehaviour, IDataPresistance
     {
         Scene scene = SceneManager.GetActiveScene();
         data.LvlName = scene.name;
-        Debug.Log("" + scene.name);
+   
         if (scene.name == "Poziom_0")
         {
             data.coins_lvl0 = coinsCollected;
@@ -75,7 +75,7 @@ public class CoinsCollectedText : MonoBehaviour, IDataPresistance
         }
         if (scene.name == "Poziom_2")
         {
-            data.coins_lvl2 = coinsCollected;
+           data.coins_lvl2 = coinsCollected;
         }
 
     }
