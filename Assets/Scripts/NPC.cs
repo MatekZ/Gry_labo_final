@@ -17,6 +17,7 @@ public class NPC : MonoBehaviour
     public bool playerClose;
     public int countToPanel;
     public GameObject nicoCraftPanel;
+    public PlayerController player;
 
 
     private void Update()
@@ -48,11 +49,25 @@ public class NPC : MonoBehaviour
                 {
                     Debug.Log("ostatnie zdanie");
                     nicoCraftPanel.SetActive(true);
+                    if (nicoCraftPanel.activeInHierarchy)
+                    {
+                        player.walkSpeed = 0;
+                        player.jumpImpulse = 0;
+                    }
+
+                
                 }
             }
         }
         //Debug.Log("count = "+ countToPanel);
 
+    }
+
+    public void Set()
+    {
+        player.walkSpeed = 5;
+        player.jumpImpulse = 15;
+        countToPanel = 2;
     }
 
     public void TextReset()
