@@ -41,7 +41,8 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
 
                 if (levelName == "Poziom_1")
                 {
-                    PlayerPosition = new Vector3(-6f, 0.6f, 0f);
+                    // PlayerPosition = new Vector3(-6f, 0.6f, 0f);
+                    PlayerPosition = new Vector3(428f, -210.6f, 0f);
                 }
 
                
