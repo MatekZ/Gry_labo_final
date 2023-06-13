@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CoinsCollectedText : MonoBehaviour, IDataPresistance
 {
@@ -40,11 +41,43 @@ public class CoinsCollectedText : MonoBehaviour, IDataPresistance
                 coinsCollected++;
             }
         }
+
+        Scene scene = SceneManager.GetActiveScene();
+        data.LvlName = scene.name;
+        Debug.Log("" + scene.name);
+        if (scene.name == "Poziom_0")
+        {
+            coinsCollected = data.coins_lvl0;
+        }
+        if (scene.name == "Poziom_1")
+        {
+            coinsCollected = data.coins_lvl1;
+        }
+        if (scene.name == "Poziom_2")
+        {
+            coinsCollected = data .coins_lvl2;
+        }
+
     }
 
     public void SaveData(ref GameData data)
     {
-       
+        Scene scene = SceneManager.GetActiveScene();
+        data.LvlName = scene.name;
+        Debug.Log("" + scene.name);
+        if (scene.name == "Poziom_0")
+        {
+            data.coins_lvl0 = coinsCollected;
+        }
+        if (scene.name == "Poziom_1")
+        {
+            data.coins_lvl1 = coinsCollected;
+        }
+        if (scene.name == "Poziom_2")
+        {
+            data.coins_lvl2 = coinsCollected;
+        }
+
     }
 
     private void OnCoinCollected()
