@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CursorMaze : MonoBehaviour
 {
@@ -28,6 +29,18 @@ public class CursorMaze : MonoBehaviour
 
     private void OnMouseExit()
     {
+        Debug.Log("exit");  
         miniGame.SetActive(false);
+
     }
+
+    /*public void OnPointerExit(PointerEventData eventData)
+    {
+        Debug.Log("exit");
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("click");
+    }*/
 }

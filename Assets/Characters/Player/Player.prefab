@@ -82,7 +82,7 @@ MonoBehaviour:
   attackDamage: 5
   knockback: {x: 1, y: 0}
   statPanel: {fileID: 0}
-  attack: 0
+  attack: 5
 --- !u!1 &5972495009447698076
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +222,11 @@ MonoBehaviour:
   isLadder: 0
   isClimbing: 0
   statPanel: {fileID: 0}
+  key_amount: 0
+  respawnPoints:
+  - {fileID: 0}
+  respawnPointNum: -1
+  startSpawn: {fileID: 0}
 --- !u!114 &167855868017959656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,9 +519,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05626cae2b644594183710d5c3a3bf49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 0
   Strength:
-    BaseValue: 0
+    BaseValue: 5
   Agility:
     BaseValue: 0
   Intelligence:
@@ -525,13 +530,16 @@ MonoBehaviour:
     BaseValue: 0
   Inventory: {fileID: 0}
   EquipmentPanel: {fileID: 0}
-  craftingWindow: {fileID: 0}
+  NovaCraftingWindow: {fileID: 0}
+  NicoCraftingWindow: {fileID: 0}
+  BlakeCraftingWindow: {fileID: 0}
   statPanel: {fileID: 0}
   itemTooltip: {fileID: 0}
   draggableItem: {fileID: 0}
   dropItemArea: {fileID: 0}
   reallyDropItemDialog: {fileID: 0}
   itemSaveManager: {fileID: 0}
+  damageable: {fileID: 4981725290851138200}
 --- !u!1 &6270210345716745467
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +741,7 @@ MonoBehaviour:
   attackDamage: 10
   knockback: {x: 1, y: 0}
   statPanel: {fileID: 0}
-  attack: 0
+  attack: 5
 --- !u!1 &7590920040167325882
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +827,7 @@ MonoBehaviour:
   attackDamage: 20
   knockback: {x: 0, y: 0}
   statPanel: {fileID: 0}
-  attack: 0
+  attack: 5
 --- !u!1 &8209770623088552110
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,4 +913,4 @@ MonoBehaviour:
   attackDamage: 20
   knockback: {x: 5, y: 0}
   statPanel: {fileID: 0}
-  attack: 0
+  attack: 5

@@ -20,8 +20,11 @@ public class StartMiniGame : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("clikc");
+
         route.SetActive(true);
         end.SetActive(true);
     }
    
+
 }
