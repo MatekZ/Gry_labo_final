@@ -2,6 +2,8 @@ using Kryz.CharacterStats;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 //using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -24,6 +26,9 @@ public class PlayerController : MonoBehaviour, IDataPresistance
     TouchingDirections touchingDirections;
     Damageable damageable;
     public int key_amount = 0;
+    public GameObject[] respawnPoints;
+    public int respawnPointNum = -1;
+    public GameObject startSpawn;
 
     public float CurrentMoveSpeed
     {
@@ -167,6 +172,7 @@ public class PlayerController : MonoBehaviour, IDataPresistance
         {
             isClimbing = false;
         }
+        OnDeath();
     }
 
     
@@ -280,5 +286,39 @@ public class PlayerController : MonoBehaviour, IDataPresistance
     {
           CharacterStat[] stats = statPanel.GetStats();
         walkSpeed = 5 + ((int)stats[1].Value);
+    }
+
+
+    public void OnDeath()
+    {
+        if(damageable.Health <= 0)
+        {
+            StartCoroutine(changeAnim());
+        }
+    }
+
+    IEnumerator changeAnim()
+    {
+        if (respawnPointNum >= 0)
+        {
+            transform.position = respawnPoints[respawnPointNum].transform.position;
+            Debug.Log("deadge");
+            damageable.Health = damageable.MaxHealth;
+            yield return new WaitForSeconds(1.2f);
+
+            animator.SetBool("isAlive", true);
+        }
+        else
+        {
+            transform.position = startSpawn.transform.position;
+            Debug.Log("deadge");
+            damageable.Health = damageable.MaxHealth;
+            yield return new WaitForSeconds(1.2f);
+
+            animator.SetBool("isAlive", true);
+        }
+        
+        
+
     }
 }
