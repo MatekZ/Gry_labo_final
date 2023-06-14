@@ -11,7 +11,7 @@ public class FireballLaunch : MonoBehaviour
 
     public void FireProjectile()
     {
-        int rnd1 = Random.Range(0, fireballLaunchPoint.Length);
+        int rnd1 = Random.Range(5, fireballLaunchPoint.Length);
 
         for (int i = 0; i <= rnd1; i++)
         {

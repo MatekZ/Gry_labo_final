@@ -20,7 +20,8 @@ public class Boss : MonoBehaviour
     public GameObject dialoguePanel;
     private bool phase2Activated = false;
     public Animator phase2Animator;
-    public CameraShake phase2CamShake; 
+    public CameraShake phase2CamShake;
+    public GameObject endPlatform;
 
 
 
@@ -76,6 +77,7 @@ public class Boss : MonoBehaviour
         if (damageable.Health <= 0)
         {
             Destroy(HPBar);
+            endPlatform.SetActive(true);
         }
     }
 

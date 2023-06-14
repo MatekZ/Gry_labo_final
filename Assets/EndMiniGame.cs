@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndMiniGame : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class EndMiniGame : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        Debug.Log("END");
+        SceneManager.LoadScene("UndeadCutscene");
+
     }
 
 }
