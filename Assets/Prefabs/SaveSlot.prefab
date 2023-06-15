@@ -68,7 +68,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: EMPTY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
   m_sharedMaterial: {fileID: 1066268624651663847, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -93,13 +93,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &237265044617441925
@@ -241,8 +241,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '82% COMPLETE '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
-  m_sharedMaterial: {fileID: 1066268624651663847, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
+  m_sharedMaterial: {fileID: 6109421848474696833, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -266,13 +266,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -376,8 +376,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'HEALTH: 70'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
-  m_sharedMaterial: {fileID: 1066268624651663847, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
+  m_sharedMaterial: {fileID: 6109421848474696833, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -401,13 +401,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -508,7 +508,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237265046484177399}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -629,6 +629,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &237265046484177397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b01464b9c618304bba53f85ea7d3cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profileId: 
+  profileId: 0
   noDataContent: {fileID: 237265046215763459}
   hasDataContent: {fileID: 237265044617441925}
   procentageCompleteText: {fileID: 237265045332718806}

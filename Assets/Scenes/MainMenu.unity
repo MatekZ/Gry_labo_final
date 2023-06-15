@@ -1545,7 +1545,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 24e38648973d2ff40ba6d0f2f885568a, type: 2}
     - target: {fileID: 6718153867279031602, guid: 97fc5c64543906e4184be5dc0264b0bf, type: 3}
       propertyPath: useEncryption
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6718153867279031603, guid: 97fc5c64543906e4184be5dc0264b0bf, type: 3}
       propertyPath: m_Name
@@ -7911,8 +7911,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Luigi\u2019s Nightmare Quest: The Haunting of Dark Castle"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
-  m_sharedMaterial: {fileID: 1066268624651663847, guid: 79bb621eab0bb4a47b85d77cb4f98735, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
+  m_sharedMaterial: {fileID: 6109421848474696833, guid: 82723e652e0a3e54f943b0981d24f364, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7936,13 +7936,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -8754,18 +8754,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 14323043}
     m_Modifications:
-    - target: {fileID: 237265046484177385, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: profileId
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 237265046484177386, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 237265046484177386, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 237265046484177386, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -8774,22 +8762,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1326163640}
-    - target: {fileID: 237265046484177386, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 237265046484177386, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 237265046484177386, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 237265046484177386, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 237265046484177396, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8877,10 +8849,6 @@ PrefabInstance:
     - target: {fileID: 237265046484177399, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
       propertyPath: m_Name
       value: SaveSlot
-      objectReference: {fileID: 0}
-    - target: {fileID: 237265046484177399, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ca284399545ba844b432be3eafc1fd4, type: 3}

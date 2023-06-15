@@ -58,6 +58,11 @@ public class CoinsCollectedText : MonoBehaviour, IDataPresistance
             coinsCollected = data .coins_lvl2;
         }
 
+        if (scene.name == "DarkCastle")
+        {
+            coinsCollected = data.coins_lvl3;
+        }
+
     }
 
     public void SaveData(ref GameData data)
@@ -76,6 +81,11 @@ public class CoinsCollectedText : MonoBehaviour, IDataPresistance
         if (scene.name == "Poziom_2")
         {
            data.coins_lvl2 = coinsCollected;
+        }
+
+        if (scene.name == "DarkCastle")
+        {
+            data.coins_lvl3 = coinsCollected;
         }
 
     }

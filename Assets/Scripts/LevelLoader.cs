@@ -44,8 +44,12 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
                     // PlayerPosition = new Vector3(-6f, 0.6f, 0f);
                     PlayerPosition = new Vector3(428f, -210.6f, 0f);
                 }
+                if (levelName == "DarkCastle")
+                {
+                    // PlayerPosition = new Vector3(-6f, 0.6f, 0f);
+                    PlayerPosition = new Vector3(428f, -210.6f, 0f);
+                }
 
-               
                 DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
                
 

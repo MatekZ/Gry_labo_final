@@ -18,19 +18,21 @@ public class GameData
     public int coins_lvl0;
     public int coins_lvl1;
     public int coins_lvl2;
+    public int coins_lvl3;
   
     public GameData()
     {
       
              this.health = 100;
-          // PlayerPosition =  new Vector3(-84.95f, -0.88f,  0f);
-             PlayerPosition = new Vector3(146f, 60f, 0f);
+           PlayerPosition =  new Vector3(-84.95f, -0.88f,  0f);
+          //   PlayerPosition = new Vector3(146f, 60f, 0f);
              coinsCollected = new SerializableDictionary<string, bool>();
              chest1 = new SerializableDictionary<string, bool>();
              this.LvlName = "";
              coins_lvl0 = 0;
              coins_lvl1 = 0;
              coins_lvl2 = 0;
+             coins_lvl3 = 0;
 
 
     }
