@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,10 +12,14 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
     public bool playerClose;
     public Vector3 PlayerPosition;
     public Character character;
+
+
+  
+
     // Start is called before the first frame update
     void Start()
     {
-
+    
     }
 
     // Update is called once per frame
@@ -25,29 +30,37 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                
 
+               
                 //  DataPersistanceManager.Instance.LoadGame();
 
                 if (levelName == "HUB")
                 {
                     PlayerPosition = new Vector3(4f, -4f, 0f);
+                   
+                     
+                
                 }
 
                 if (levelName == "Poziom_0")
                 {
                     PlayerPosition = new Vector3(-86f, -0.88f, 0f);
+                   
+
                 }
 
                 if (levelName == "Poziom_1")
                 {
                     // PlayerPosition = new Vector3(-6f, 0.6f, 0f);
                     PlayerPosition = new Vector3(428f, -210.6f, 0f);
+                
                 }
                 if (levelName == "DarkCastle")
                 {
                     // PlayerPosition = new Vector3(-6f, 0.6f, 0f);
-                    PlayerPosition = new Vector3(428f, -210.6f, 0f);
+                    PlayerPosition = new Vector3(-4f, 0f, 0f);
+                  
+
                 }
 
                 DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
@@ -58,7 +71,7 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
 
 
                 SceneManager.LoadScene(levelName);
-               
+       
 
             }
         }
@@ -70,6 +83,7 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
         if (collision.CompareTag("Player"))
         {
            playerClose = true;
+
         }
     }
 
@@ -85,7 +99,7 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
     {
         DataPersistanceManager.Instance.LoadInventory(character);
         DataPersistanceManager.Instance.LoadEquipment(character);   
-        // SceneManager.LoadScene(data.LvlName);
+      //   SceneManager.LoadScene(data.LvlName);
     }
 
 
@@ -97,5 +111,7 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
         DataPersistanceManager.Instance.SaveInventory(character);   
         
     }
-   
+
+
+  
 }

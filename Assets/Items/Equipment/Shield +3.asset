@@ -16,10 +16,10 @@ MonoBehaviour:
   ItemName: Shield +3
   Icon: {fileID: 21300000, guid: 047c8d325fbb2b34c866ac8ee5f83dbf, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
+  StrengthBonus: 0
   AgilityBonus: 0
   IntelligenceBonus: 0
-  VitalityBonus: 0
+  VitalityBonus: 9
   StrengthPercentBonus: 0
   AgilityPercentBonus: 0
   IntelligencePercentBonus: 0

@@ -16,8 +16,8 @@ MonoBehaviour:
   ItemName: Bow +1
   Icon: {fileID: 21300000, guid: fbbe35dddfcdb17499a8ddfedfdce0e9, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
-  AgilityBonus: 0
+  StrengthBonus: 0
+  AgilityBonus: 4
   IntelligenceBonus: 0
   VitalityBonus: 0
   StrengthPercentBonus: 0

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Ring3
   m_EditorClassIdentifier: 
   Materials:
-  - Item: {fileID: 11400000, guid: 982c717cca1da3247aa21b9c589e08e5, type: 2}
-    Amount: 6
+  - Item: {fileID: 11400000, guid: e26f8b6247b961741af07d969434d853, type: 2}
+    Amount: 3
   Results:
   - Item: {fileID: 11400000, guid: 5559b14301477494cb92b40d6710b9a0, type: 2}
     Amount: 1

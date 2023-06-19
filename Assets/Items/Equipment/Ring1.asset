@@ -16,12 +16,12 @@ MonoBehaviour:
   ItemName: Ring1
   Icon: {fileID: 21300000, guid: 35c31a1e41eb04a4c9c82310ca2473d7, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
+  StrengthBonus: 0
   AgilityBonus: 0
   IntelligenceBonus: 0
   VitalityBonus: 0
   StrengthPercentBonus: 0
-  AgilityPercentBonus: 0
+  AgilityPercentBonus: 0.2
   IntelligencePercentBonus: 0
   VitalityPercentBonus: 0
   EquipmentType: 4

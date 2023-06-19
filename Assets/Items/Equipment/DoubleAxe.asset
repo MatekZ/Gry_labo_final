@@ -16,7 +16,7 @@ MonoBehaviour:
   ItemName: DoubleAxe
   Icon: {fileID: 21300000, guid: f8f8e47c65b262343843784de4235b07, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
+  StrengthBonus: 1
   AgilityBonus: 0
   IntelligenceBonus: 0
   VitalityBonus: 0
