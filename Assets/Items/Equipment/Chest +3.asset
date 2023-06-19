@@ -16,10 +16,10 @@ MonoBehaviour:
   ItemName: Chest +3
   Icon: {fileID: 21300000, guid: d63b68ed03431544d95f5089504f7e81, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
+  StrengthBonus: 0
   AgilityBonus: 0
   IntelligenceBonus: 0
-  VitalityBonus: 0
+  VitalityBonus: 10
   StrengthPercentBonus: 0
   AgilityPercentBonus: 0
   IntelligencePercentBonus: 0

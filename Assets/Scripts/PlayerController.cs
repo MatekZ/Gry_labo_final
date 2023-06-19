@@ -291,14 +291,20 @@ public class PlayerController : MonoBehaviour, IDataPresistance
 
     public void OnDeath()
     {
-        if(damageable.Health <= 0)
-        {
+      
+        if (damageable.Health <= 0)
+        {            
             StartCoroutine(changeAnim());
         }
     }
 
     IEnumerator changeAnim()
     {
+        if (true)
+        {
+            animator.SetBool("isAlive", false);
+            yield return new WaitForSeconds(2f);
+        }
         if (respawnPointNum >= 0)
         {
             transform.position = respawnPoints[respawnPointNum].transform.position;
@@ -306,7 +312,7 @@ public class PlayerController : MonoBehaviour, IDataPresistance
             damageable.Health = damageable.MaxHealth;
             yield return new WaitForSeconds(1.2f);
 
-            animator.SetBool("isAlive", true);
+         
         }
         else
         {
@@ -315,10 +321,11 @@ public class PlayerController : MonoBehaviour, IDataPresistance
             damageable.Health = damageable.MaxHealth;
             yield return new WaitForSeconds(1.2f);
 
-            animator.SetBool("isAlive", true);
+            
         }
         
-        
+        damageable.IsAlive = true;
+        animator.SetBool("isAlive", true);
 
     }
 }

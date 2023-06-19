@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Neck1
   m_EditorClassIdentifier: 
   Materials:
-  - Item: {fileID: 11400000, guid: 982c717cca1da3247aa21b9c589e08e5, type: 2}
-    Amount: 2
+  - Item: {fileID: 11400000, guid: e26f8b6247b961741af07d969434d853, type: 2}
+    Amount: 1
   Results:
   - Item: {fileID: 11400000, guid: 8e95f49f6b49c3d429a90c36c24957f6, type: 2}
     Amount: 1

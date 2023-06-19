@@ -16,8 +16,8 @@ MonoBehaviour:
   ItemName: Boots +3
   Icon: {fileID: 21300000, guid: 0587ebe78db589848b0f848808a4c20b, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
-  AgilityBonus: 0
+  StrengthBonus: 0
+  AgilityBonus: 8
   IntelligenceBonus: 0
   VitalityBonus: 0
   StrengthPercentBonus: 0

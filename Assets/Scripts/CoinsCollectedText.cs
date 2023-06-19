@@ -100,4 +100,7 @@ public class CoinsCollectedText : MonoBehaviour, IDataPresistance
         coinsCollectedText.text = coinsCollected + " / " + totalCoins;
     }
 
+
+    
+
 }

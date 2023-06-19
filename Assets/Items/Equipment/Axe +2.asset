@@ -16,7 +16,7 @@ MonoBehaviour:
   ItemName: Axe +2
   Icon: {fileID: 21300000, guid: 5d82a7e641281d64297cedec47485b7d, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
+  StrengthBonus: 6
   AgilityBonus: 0
   IntelligenceBonus: 0
   VitalityBonus: 0

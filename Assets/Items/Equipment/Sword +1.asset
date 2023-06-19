@@ -16,7 +16,7 @@ MonoBehaviour:
   ItemName: Sword +1
   Icon: {fileID: 21300000, guid: aa009174bb545364b86efa341570d87d, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
+  StrengthBonus: 6
   AgilityBonus: 0
   IntelligenceBonus: 0
   VitalityBonus: 0

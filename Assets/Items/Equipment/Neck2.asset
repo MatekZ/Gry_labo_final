@@ -16,12 +16,12 @@ MonoBehaviour:
   ItemName: Neck2
   Icon: {fileID: 21300000, guid: 4fee2a3170d19754db493ef15a7005cd, type: 3}
   MaximumStacks: 1
-  StrengthBonus: 7
+  StrengthBonus: 0
   AgilityBonus: 0
   IntelligenceBonus: 0
   VitalityBonus: 0
-  StrengthPercentBonus: 0
+  StrengthPercentBonus: 0.5
   AgilityPercentBonus: 0
   IntelligencePercentBonus: 0
-  VitalityPercentBonus: 0
+  VitalityPercentBonus: 0.5
   EquipmentType: 4
