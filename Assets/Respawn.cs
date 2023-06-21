@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Respawn : MonoBehaviour
 {
+    
 
     public PlayerController player;
     // Start is called before the first frame update
@@ -23,8 +27,11 @@ public class Respawn : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("enter");
-            player.respawnPointNum++;
+            player.respawnPointNum++; 
             this.gameObject.SetActive(false);
+
         }
     }
+
+    
 }
