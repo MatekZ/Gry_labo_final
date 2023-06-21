@@ -153,4 +153,11 @@ public class SwordSkellyEnemy : MonoBehaviour
             FlipDirection();
         }
     }
+    public void OnDeath()
+    {
+        rb.gravityScale = 1f;
+        rb.velocity = new Vector2(0, rb.velocity.y);
+       // deathCollider.enabled = true;
+    }
+
 }

@@ -80993,6 +80993,18 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 342480876}
+    - target: {fileID: 7238586877950669958, guid: f548eb07f896843438ad4f93ba4d5fa7, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 1333842963}
+    - target: {fileID: 7239074802375716062, guid: f548eb07f896843438ad4f93ba4d5fa7, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239074802375716062, guid: f548eb07f896843438ad4f93ba4d5fa7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7340982580656862764, guid: f548eb07f896843438ad4f93ba4d5fa7, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -83464,6 +83476,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0.3278594, y: 0.08029199}
   m_Size: {x: 1.2817812, y: 1.901916}
   m_Direction: 0
+--- !u!114 &1333842963 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7239074802375716062, guid: f548eb07f896843438ad4f93ba4d5fa7, type: 3}
+  m_PrefabInstance: {fileID: 1261791190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1335987923
 GameObject:
   m_ObjectHideFlags: 0

@@ -68,7 +68,7 @@ public class Damageable : MonoBehaviour
         set
         {
             _isAlive = value;
-           // animator.SetBool(AnimationStrings.isAlive, value);
+           animator.SetBool(AnimationStrings.isAlive, value);
 
             if (value == false)
             {

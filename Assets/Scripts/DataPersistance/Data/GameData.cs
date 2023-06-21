@@ -19,6 +19,10 @@ public class GameData
     public int coins_lvl1;
     public int coins_lvl2;
     public int coins_lvl3;
+    public bool lvl0;
+    public bool lvl1;
+    public bool lvl2;
+    public bool lvl3;
   
     public GameData()
     {
@@ -33,6 +37,10 @@ public class GameData
              coins_lvl1 = 0;
              coins_lvl2 = 0;
              coins_lvl3 = 0;
+             lvl0 = false; 
+             lvl1 = false;
+             lvl2 = false;  
+             lvl3 = false;
 
 
     }

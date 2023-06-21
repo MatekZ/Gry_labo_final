@@ -36,7 +36,7 @@ public class SaveSlotsMenu : Menu
 
             DataPersistanceManager.Instance.NewGame();
             ItemSaveIO.DeleteFile();
-            SceneManager.LoadSceneAsync("Poziom_0");
+            SceneManager.LoadSceneAsync(1);
         }
         else
         {

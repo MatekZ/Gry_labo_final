@@ -12,9 +12,12 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
     public bool playerClose;
     public Vector3 PlayerPosition;
     public Character character;
+    public bool lvl0;
+    public bool lvl1;
+    public bool lvl2;
+    public bool lvl3;
 
 
-  
 
     // Start is called before the first frame update
     void Start()
@@ -37,41 +40,54 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
                 if (levelName == "HUB")
                 {
                     PlayerPosition = new Vector3(4f, -4f, 0f);
-                   
-                     
-                
+
+                    DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
+
+
+                    SceneManager.LoadScene(levelName);
+
                 }
 
                 if (levelName == "Poziom_0")
                 {
                     PlayerPosition = new Vector3(-86f, -0.88f, 0f);
-                   
+                    DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
+
+                    SceneManager.LoadScene(levelName);
 
                 }
 
-                if (levelName == "Poziom_1")
+                if (levelName == "Poziom_1" && lvl1 == true)
                 {
-                    // PlayerPosition = new Vector3(-6f, 0.6f, 0f);
-                    PlayerPosition = new Vector3(428f, -210.6f, 0f);
-                
+                    PlayerPosition = new Vector3(-6f, 0.6f, 0f);
+                   // PlayerPosition = new Vector3(428f, -210.6f, 0f);
+                    DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
+
+
+                    SceneManager.LoadScene(levelName);
                 }
-                if (levelName == "DarkCastle")
+                if (levelName == "DarkCastle" && lvl2==true)
+                {
+                     PlayerPosition = new Vector3(-6f, 0.6f, 0f);
+                   // PlayerPosition = new Vector3(371f, 2f, 0f);
+                    DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
+
+
+                    SceneManager.LoadScene(levelName);
+
+                }
+
+                if (levelName == "UndeadCutscene" && lvl3 == true)
                 {
                     // PlayerPosition = new Vector3(-6f, 0.6f, 0f);
                     PlayerPosition = new Vector3(-4f, 0f, 0f);
-                  
+                    DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
+
+
+                    SceneManager.LoadScene(levelName);
 
                 }
 
-                DataPersistanceManager.Instance.ChangePosition(PlayerPosition);
-               
-
-
-
-
-
-                SceneManager.LoadScene(levelName);
-       
 
             }
         }
@@ -98,8 +114,15 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
     public void LoadData(GameData data)
     {
         DataPersistanceManager.Instance.LoadInventory(character);
-        DataPersistanceManager.Instance.LoadEquipment(character);   
-      //   SceneManager.LoadScene(data.LvlName);
+        DataPersistanceManager.Instance.LoadEquipment(character);
+
+        lvl0 = data.lvl0;
+        lvl1 = data.lvl1;
+        lvl2 = data.lvl2;
+
+
+      
+
     }
 
 
@@ -107,6 +130,38 @@ public class LevelLoader : MonoBehaviour, IDataPresistance
     {
          Scene scene = SceneManager.GetActiveScene();
          data.LvlName = scene.name;
+
+
+
+
+        if (data.LvlName == "HUB")
+        {
+
+           
+
+
+        }
+
+        if (data.LvlName == "Poziom_0")
+        {
+         
+            data.lvl1 = true;
+            
+
+        }
+
+        if  (data.LvlName == "Poziom_1")
+        {
+           data.lvl2 = true;
+
+        }
+        if (data.LvlName == "DarkCastle")
+        {
+           
+            data.lvl3 = true;   
+
+        }
+
         DataPersistanceManager.Instance.SaveEquipment(character);
         DataPersistanceManager.Instance.SaveInventory(character);   
         

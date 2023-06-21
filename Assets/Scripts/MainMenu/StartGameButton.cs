@@ -25,6 +25,7 @@ public class StartGameButton : Menu
     {
         saveSlotsMenu.ActivateMenu(false);
         this.DeactivateMenu();
+     
     }
 
     public void OnLoadGameClicked()
