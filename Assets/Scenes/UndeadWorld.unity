@@ -80973,6 +80973,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 233293085, guid: f548eb07f896843438ad4f93ba4d5fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7238552740462346092, guid: f548eb07f896843438ad4f93ba4d5fa7, type: 3}
       propertyPath: player
       value: 

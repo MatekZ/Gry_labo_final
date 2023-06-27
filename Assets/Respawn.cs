@@ -26,6 +26,7 @@ public class Respawn : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Save();
             Debug.Log("enter");
             player.respawnPointNum++; 
             this.gameObject.SetActive(false);
@@ -33,5 +34,10 @@ public class Respawn : MonoBehaviour
         }
     }
 
-    
+    public void Save()
+    {
+        DataPersistanceManager.Instance.SaveGame();
+        //  ItemSaveManager.Instance.SaveEquipment(character);
+        //  ItemSaveManager.Instance.SaveInventory(character);
+    }
 }

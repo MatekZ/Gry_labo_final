@@ -18,16 +18,16 @@ public class Coinscollectedlvl : MonoBehaviour, IDataPresistance
         }
         if (name1 == "Poziom_1")
         {
-            coins.text = data.coins_lvl1.ToString();
+            coins.text = data.coins_lvl1.ToString() + "/" + "20";
         }
         if (name1 == "Poziom_2")
         {
-            coins.text = data.coins_lvl2.ToString();
+            coins.text = data.coins_lvl2.ToString() + "/" + "20";
         }
 
         if (name1 == "DarkCastle")
         {
-            coins.text = data.coins_lvl3.ToString();
+            coins.text = data.coins_lvl3.ToString() + "/" + "20";
         }
 
     }
