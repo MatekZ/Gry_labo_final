@@ -1,0 +1,26 @@
+Gra platformowa z elementami RPG dla jednej osoby, w stylu 2D pixelart.
+
+Funkcjonalności zaimplementowane w grze:
+- system walki oraz poruszania się
+- system punktów na każdym poziomie
+- system zdrowia
+- różne rodzaje przeciwników
+- boss, w pełni udzwiękowiony oraz animowany, z dwoma fazami trudności
+- 5 poziomów, z unikalnymi łamigłówkami do rozwiązania oraz klimatem zależnym od fabuły
+- wiele mechanik, takich jak wyrzutnie płomieni, czy strzał, spadające kolce, obracające się piły, itd.
+- interakcja z NPC
+- ekwipunek gracza, z okienkami pomocniczymi pokazującymi nazwę i statystyki przedmiotów
+- HUB, w którym gracz ma możliwość kupowania mikstur, ulepszania i kupowania ekwipunku
+- cutscenki
+- UI, pokazujące zdrowie gracza, sklepy, zdrowie bossa, ekwipunek gracza
+- menu główne i ekran pauzy
+- system zapisywania gry do pliku
+- system wczytywania gry z ostatniego zapisu lub z wybranego pliku
+- i więcej
+
+Aby otworzyć grę należy:
+1. Pobrać kod programu w postaci pliku .zip
+2. Wypakować w wybrane miejsce
+3. Znaleźć folder "build"
+4. W folderze "build" znaleźć plik "2D_platformer_labo.exe"
+5. Po kliknięciu w plik gra powinna się uruchomić
